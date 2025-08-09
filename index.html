@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Namjoon Bhaiya - Wise Rakshabandhan Wish</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Courier+Prime&display=swap');
+
+  :root {
+    --deep-purple: #6a4c93;
+    --soft-cream: #f2e9e4;
+    --muted-gold: #c9b037;
+    --shadow-color: rgba(105, 79, 144, 0.5);
+    --book-color1: #c9b037;
+    --book-color2: #a58a47;
+    --book-color3: #d4c48c;
+    --book-color4: #b3995d;
+  }
+
+  body, html {
+    margin: 0; padding: 0;
+    height: 100%;
+    background: var(--soft-cream);
+    font-family: 'Courier Prime', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--deep-purple);
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  .container {
+    background: white;
+    max-width: 700px;
+    padding: 3rem 3.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 25px var(--shadow-color);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .avatar {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px var(--deep-purple);
+    border: 4px solid var(--muted-gold);
+    position: relative;
+    z-index: 2;
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--deep-purple);
+    letter-spacing: 0.05em;
+    position: relative;
+    z-index: 2;
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--deep-purple);
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Multiple floating books */
+  .book-icon {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.8;
+    animation-timing-function: ease-in-out;
+    user-select: none;
+    pointer-events: none;
+    font-family: serif;
+  }
+
+  /* Positions and animations for each book */
+  .book1 {
+    top: 5%;
+    left: 10%;
+    color: var(--book-color1);
+    animation: floatBook 6s infinite;
+    animation-delay: 0s;
+  }
+  .book2 {
+    top: 20%;
+    right: 15%;
+    color: var(--book-color2);
+    animation: floatBook 7s infinite;
+    animation-delay: 2s;
+  }
+  .book3 {
+    bottom: 10%;
+    left: 25%;
+    color: var(--book-color3);
+    animation: floatBook 5.5s infinite;
+    animation-delay: 1s;
+  }
+  .book4 {
+    bottom: 20%;
+    right: 20%;
+    color: var(--book-color4);
+    animation: floatBook 6.5s infinite;
+    animation-delay: 3s;
+  }
+  .book5 {
+    top: 15%;
+    left: 50%;
+    color: var(--book-color1);
+    animation: floatBook 7.5s infinite;
+    animation-delay: 4s;
+  }
+
+  @keyframes floatBook {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateY(-15px) rotate(10deg);
+      opacity: 0.5;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="region" aria-label="Namjoon Bhaiya Rakshabandhan Wish">
+    <div class="avatar" aria-label="Namjoon smiling photo">
+      <img src="images/namjoon.jpg" alt="Namjoon calm smiling" />
+    </div>
+    <h1>Happy Rakshabandhan, Namjoon bhaiya 💜</h1>
+    <p>You’ve always been like that wise and caring elder brother who guides and protects without even trying. Thank you for being our strength and comfort, always.</p>
+
+    <!-- Multiple floating books using Unicode book emoji -->
+    <div class="book-icon book1" aria-hidden="true" title="Book">&#128214;</div>
+    <div class="book-icon book2" aria-hidden="true" title="Book">&#128218;</div>
+    <div class="book-icon book3" aria-hidden="true" title="Book">&#128213;</div>
+    <div class="book-icon book4" aria-hidden="true" title="Book">&#128212;</div>
+    <div class="book-icon book5" aria-hidden="true" title="Book">&#128214;</div>
+  </div>
+</body>
+</html>
